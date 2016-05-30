@@ -1,33 +1,31 @@
 
-/**
- * Write a description of class Yate here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Yate extends Barco
+public class Yate extends EmbarcacionDeportiva
 {
-    // instance variables - replace the example below with your own
     private int camarotes;
 
     /**
-     * Constructor for objects of class Velero
+     * Constructor for objects of class Yate
      */
-    public Yate(int camarotes, String matricula, float eslora, int anoFabricacion)
+    public Yate(int camarote, int potencia, String matricula, float eslora, int anoFab)
     {
-        // initialise instance variables
-        super(matricula, eslora, anoFabricacion);
-        this.camarotes = camarotes;
+        super(potencia, matricula, eslora, anoFab);
+        this.camarotes = camarote;
     }
 
+    /**
+     * Return coeficiente Bernua
+     */
     @Override
     public int getCoeficienteBernua()
     {
-        return camarotes;   
+				return super.getCoeficienteBernua() + camarotes; 
     }
 
     public String toString()
     {
-        return ("Tiene " + this.camarotes + " camarotes");
+        String data = super.toString();
+        data += "Númeo de camarotes: " + camarotes + "\n";
+        return data;
     }
-}
+  
+}   

@@ -1,9 +1,10 @@
 #BlueJ class context
-comment0.params=camarotes\ matricula\ eslora\ anoFabricacion
-comment0.target=Yate(int,\ java.lang.String,\ float,\ int)
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Velero\r\n
+comment0.params=camarote\ potencia\ matricula\ eslora\ anoFab
+comment0.target=Yate(int,\ int,\ java.lang.String,\ float,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Yate\r\n
 comment1.params=
 comment1.target=int\ getCoeficienteBernua()
+comment1.text=\r\n\ Return\ coeficiente\ Bernua\r\n
 comment2.params=
 comment2.target=java.lang.String\ toString()
 numComments=3

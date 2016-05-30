@@ -1,15 +1,19 @@
 #BlueJ class context
-comment0.params=matricula\ eslora\ anoFabricacion
+comment0.params=matricula\ eslora\ anoFab
 comment0.target=Barco(java.lang.String,\ float,\ int)
-comment0.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Barco\r\n
 comment1.params=
 comment1.target=java.lang.String\ getMatricula()
+comment1.text=\r\n\ Return\ registration\r\n
 comment2.params=
 comment2.target=float\ getEslora()
+comment2.text=\r\n\ Return\ length\r\n
 comment3.params=
 comment3.target=int\ getAnoFabricacion()
+comment3.text=\r\n\ Return\ year\ of\ production\ \ \ \ \r\n
 comment4.params=
 comment4.target=int\ getCoeficienteBernua()
 comment5.params=
 comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Return\ all\ the\ data\r\n
 numComments=6

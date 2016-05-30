@@ -7,27 +7,32 @@
  */
 public class EmbarcacionDeportiva extends Barco
 {
-    // instance variables - replace the example below with your own
     private int potencia;
 
     /**
-     * Constructor for objects of class Velero
+     * Constructor for objects of class EmbarcaciónDeportiva
      */
-    public EmbarcacionDeportiva(int potencia, String matricula, float eslora, int anoFabricacion)
+    public EmbarcacionDeportiva(int potencia, String matricula, float eslora, int anoFab)
     {
-        // initialise instance variables
-        super(matricula, eslora, anoFabricacion);
+        super(matricula, eslora, anoFab);
         this.potencia = potencia;
     }
 
-    @Override
+    /**
+     * Return coeficienteBernua
+     */
     public int getCoeficienteBernua()
     {
-        return potencia;   
+			return potencia;
     }
-
+    
+    /**
+     * Return all the data
+     */
     public String toString()
     {
-        return ("Tiene " + this.potencia + " de potencia");
+        String data = super.toString();
+        data += "Potencia: " + potencia + "\n";
+        return data;
     }
 }

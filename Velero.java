@@ -5,30 +5,35 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+
 public class Velero extends Barco
 {
-    // instance variables - replace the example below with your own
     private int numeroMastiles;
 
     /**
      * Constructor for objects of class Velero
      */
-    public Velero(int numeroMastiles, String matricula, float eslora, int anoFabricacion)
+    public Velero(int numeroMastiles, String matricula, float eslora, int anoFab)
     {
-        // initialise instance variables
-        super(matricula, eslora, anoFabricacion);
+        super(matricula, eslora, anoFab);
         this.numeroMastiles = numeroMastiles;
-
     }
 
-    @Override
+    /**
+     * Get coeficienteBernua
+     */
     public int getCoeficienteBernua()
     {
-        return numeroMastiles;   
-    }
-
+      return numeroMastiles;
+	  }
+    
+    /**
+     * Return all the data
+     */
     public String toString()
     {
-        return ("Tiene " + this.numeroMastiles + " mastiles");
+        String data = super.toString();
+        data += "Número de mástiles: " + numeroMastiles + "\n";
+        return data;
     }
 }

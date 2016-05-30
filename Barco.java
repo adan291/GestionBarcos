@@ -7,46 +7,57 @@
  */
 public abstract class Barco
 {
-    // instance variables - replace the example below with your own
     private String matricula;
     private float eslora;
     private int anoFabricacion;
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y    a sample parameter for a method
-     * @return        the sum of x and y 
+     * Constructor for objects of class Barco
      */
-    public Barco(String matricula, float eslora, int anoFabricacion)
+    public Barco(String matricula, float eslora, int anoFab)
     {
-        // put your code here
         this.matricula = matricula;
         this.eslora = eslora;
-        this.anoFabricacion = anoFabricacion;
-
+        this.anoFabricacion = anoFab;
     }
-
+    
+    /**
+     * Return registration
+     */
     public String getMatricula()
     {
         return matricula;
     }
-
+    
+    /**
+     * Return length
+     */
     public float getEslora()
     {
         return eslora;
     }
-
+    
+    /**
+     * Return year of production    
+     */
     public int getAnoFabricacion()
     {
         return anoFabricacion;
     }
-
+    
     public abstract int getCoeficienteBernua();
-   
+    
+    /**
+     * Return all the data
+     */
+    @Override
     public String toString()
     {
-        return ("La matricula es " + this.matricula + " con una eslora de " + this.eslora 
-            + " y año de fabricacion de " + this.anoFabricacion);
+        String datos = "Matricula: " + matricula + "\n";
+        datos += "Eslora: " + eslora + "\n";
+        datos += "Año de fabricación: " + anoFabricacion + "\n";
+        return datos;
     }
+
 }
+

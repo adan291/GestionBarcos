@@ -7,7 +7,6 @@
  */
 public class Cliente
 {
-    // instance variables - replace the example below with your own
     private String nombre;
     private String dni;
 
@@ -20,18 +19,48 @@ public class Cliente
         this.dni = dni;
     }
 
+    /**
+     * Return dni
+     */
     public String getDni()
     {
         return dni;
     }
     
+    /**
+     * Return name
+     */
     public String getNombre()
     {
         return nombre;
     }
     
+    /**
+     * Return data of a client
+     */
     public String toString()
     {
-        return ("Nombre" + this.nombre + "DNI" + this.dni);
-    }    
+        return "Nombre: " + nombre + " / Dni: " + dni;
+    }
 }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
