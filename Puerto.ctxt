@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Puerto()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Puerto\r\n
+comment1.params=numeroDias\ cliente\ barco
+comment1.target=int\ addAlquiler(int,\ Cliente,\ Barco)
+comment2.params=
+comment2.target=void\ verEstadoAmarres()
+comment3.params=posicion
+comment3.target=float\ liquidarAlquiler(int)
+numComments=4
